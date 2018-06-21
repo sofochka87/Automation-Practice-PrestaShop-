@@ -1,0 +1,51 @@
+Homework: automationpractice.com
+Homework
+Create a new maven project 'PrestaShopAutomationPractice'. 
+Create package com.prestashop.tests under the src/test/java. 
+Automate the following test cases.
+While automating add all the required dependencies. 
+You may choose to use any new libraries you like. Use TestNG for testing. 
+Each scenario should be separate @Test method. Use assertions. 
+You decide on how to use BeforeMethod and other annotations. 
+Push the project to git at the end. Do not push the target folder.
+
+1. Prestashop login negative scenarios
+All test cases for negative login scenarios should be in a separate class.
+Each scenario will be a different test method. 
+Name of the method will be the name of the scenario.
+
+test scenario: wrong credentials test
+go to http://automationpractice.com (Links to an external site.)
+Links to an external site.
+try to login by entering a any wrong email (email must have a correct format) and any password
+verify that message Authentication failed. is displayed
+
+test scenario: invalid email test
+go to http://automationpractice.com (Links to an external site.)
+Links to an external site.
+try to login by entering a email with invalid format and any password
+verify that message Invalid email address. is displayed
+
+test scenario: blank email test
+go to http://automationpractice.com (Links to an external site.)Links to an external site.
+try to login by leaving the email field empty and entering any password
+verify that message An email address required. is displayed
+
+test scenario: blank password test
+go to http://automationpractice.com (Links to an external site.)Links to an external site.
+try to login by entering an email and leaving the password field blank
+verify that message Password is required. is displayed
+
+ 
+
+2. Prestashop login positive scenarios
+All test cases for positive login scenarios should be in a separate class. 
+Each scenario will be a different test method. 
+Name of the method will be the name of the scenario.
+
+test scenario: login test
+go to http://automationpractice.com (Links to an external site.)Links to an external site.
+register a new user. You have to generate a new email, first name, last name every time
+Sign out once the registration is complete
+Log back using the same information
+Verify that correct first name and last name is displayed on the top right
